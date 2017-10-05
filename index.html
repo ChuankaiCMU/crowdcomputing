@@ -16,8 +16,8 @@
     	$(document).ready(function() {
     		$("#theimage").click(function(e) {
           numclicks++;
-          $("#numberofpeople").text(numclicks);
-          $("#numberofpeoplefield").val(numclicks);
+          $("#peopleinimage6").text(numclicks);
+          $("#peopleinimage6field").val(numclicks);
 
           var newdomelement = $("<div class='marker'></div>");
           newdomelement.css("left", (e.pageX-3) + "px");
@@ -51,8 +51,8 @@
         $(elem).remove();
 
         numclicks--;
-        $("#numberofpeople").text(numclicks);
-        $("#numberofpeoplefield").val(numclicks);       
+        $("#peopleinimage6").text(numclicks);
+        $("#peopleinimage6field").val(numclicks);       
       }
 
       function removeElementEvent(e) {
@@ -110,7 +110,7 @@ You've selected <span id="numberofpeople">0</span> people.
 </p>
 
 <p>
-                                         <input id="numberofpeoplefield" type="hidden" name="numberofpeople"></p>
+                                         <input id="peopleinimage6field" type="hidden" name="peopleinimage6"></p>
   <p>                                            
 <img src="./people7.jp"g height="400" width="600"/><br>
   
